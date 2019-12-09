@@ -1,3 +1,4 @@
+#The welcoming line of the Smart Calculator.
 response=['Welcome to Smart Calculator!','Devan is my name.', 
           'Thanks for using me! ','Sorry ,this is  beyond my ability.'] 
   
@@ -27,23 +28,23 @@ def hcf(a,b):
             return H 
         H-=1
   
-# Addition 
+# Addition function
 def add(a,b): 
     return a+b 
   
-# Subtraction 
+# Subtraction function
 def sub(a,b): 
     return a-b 
   
-# Multiplication 
+# Multiplication function
 def mul(a,b): 
     return a*b 
   
-# Division 
+# Division function
 def div(a,b): 
     return a/b 
   
-# Remainder 
+# Remainder function
 def mod(a,b): 
     return a%b 
   
@@ -59,7 +60,7 @@ def myname():
 def sorry(): 
     print(response[3]) 
    
-# Operations that are defined by input 
+# Operations that are defined by the users input that tell the calculator what funtion to run. 
 operations={'ADD':add,'PLUS':add,'SUM':add,'ADDITION':add, 
             'SUB':sub,'SUBTRACT':sub, 'MINUS':sub, 
             'DIFFERENCE':sub,'LCM':lcm,'HCF':hcf, 
@@ -67,13 +68,13 @@ operations={'ADD':add,'PLUS':add,'SUM':add,'ADDITION':add,
             'DIVISION':div,'MOD':mod,'REMANDER'
             :mod,'MODULAS':mod} 
   
-# commands 
+# commands that can show the calculators nane, and three ways to exit the calculator.
 commands={'NAME':myname,'EXIT':end,'END':end,'CLOSE':end} 
            
 print('--------------'+response[0]+'------------') 
 print('--------------'+response[1]+'--------------------') 
    
-   
+#The Calculator asks the user to type out what function they want performed and displays an error if the criteria is not met.   
 while True: 
     print() 
     text=input('Enter your queries:  ') 
